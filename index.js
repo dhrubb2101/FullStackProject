@@ -1,9 +1,20 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors"
 
 dotenv.config() //if you have env variables in other files other than .env file then you can use this by writing path to that file in .env file
 
 const app = express()
+
+app.use(cors({
+    origin: 'http://localhost:3000', //this is the origin that is allowed to access the server
+    credentials: true,
+    methods: ['GET','POST','DELETE','OPTIONS'], 
+    allowedHeaders: ['Content-Type','Authorization']
+})); //this is used to allow cross-origin requests, so that the server can accept requests from different origins.
+//cors is a middleware that is used to enable cross-origin resource sharing, which allows the server to accept requests from different origins.
+
+
 const port = process.env.PORT || 3000; //if there is a port number in the .env file then it will use that port number otherwise it will use 3000 as the default port number.
 
 app.get("/",(req,res)=>{  //so app is a web server and if there is a get request and and if your browser does a web request with any client, toh it can send a variety of requests like get,post,put,delete.
@@ -12,7 +23,7 @@ app.get("/",(req,res)=>{  //so app is a web server and if there is a get request
 //  So when you go to localhost:3000/ then
 //  it will send a response of Hello Cohort! to the browser.
 
-app.get("/pyush",(req,res)=> {
+app.get("/piyush",(req,res)=> {
     res.send("sending response from /pyush route");
 })
 
