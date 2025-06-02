@@ -14,3 +14,7 @@ console.log("This is a test file to check if the code is running correctly.");
 //then to use third party libraries  and the code within and them and use it we use require and import
 //today we use import instead of require
 //and if we are using import then we need to use type module in package.json file and change it to "module "
+
+//express.js 
+// command is 
+//npm install express
