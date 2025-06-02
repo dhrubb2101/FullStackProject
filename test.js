@@ -18,3 +18,17 @@ console.log("This is a test file to check if the code is running correctly.");
 //express.js 
 // command is 
 //npm install express
+
+// "scripts": {
+//     "start": "nodemon index.js"
+//   }, 
+// this is the script that we use to start the server and 
+// it will run nodemon index.js command
+
+//dotenv package is used to load environment variables from a .env file into process.env.
+// command is
+//npm install dotenv
+// and then we use it in the code by importing it
+// import dotenv from "dotenv";
+//environment variables are used to store sensitive information like API keys, database credentials, etc.
+//they should always be stored in a .env file and not in the code. 
