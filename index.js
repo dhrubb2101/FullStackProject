@@ -14,6 +14,13 @@ app.use(cors({
 })); //this is used to allow cross-origin requests, so that the server can accept requests from different origins.
 //cors is a middleware that is used to enable cross-origin resource sharing, which allows the server to accept requests from different origins.
 
+app.use(express.json())
+//this is used to parse the incoming request body in JSON format,
+//  so that we can access the data in the request body.
+
+app.use(express.urlencoded({extended:true})) 
+//this is used to parse the incoming request body in URL-encoded format,
+// so that we can access the data in the request body.
 
 const port = process.env.PORT || 3000; //if there is a port number in the .env file then it will use that port number otherwise it will use 3000 as the default port number.
 

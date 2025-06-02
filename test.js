@@ -32,3 +32,6 @@ console.log("This is a test file to check if the code is running correctly.");
 // import dotenv from "dotenv";
 //environment variables are used to store sensitive information like API keys, database credentials, etc.
 //they should always be stored in a .env file and not in the code. 
+
+//how to send data in json format from server to client
+// we use res.json() method to send data in json format from server to client.
