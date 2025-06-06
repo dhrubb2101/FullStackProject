@@ -35,3 +35,9 @@ console.log("This is a test file to check if the code is running correctly.");
 
 //how to send data in json format from server to client
 // we use res.json() method to send data in json format from server to client.
+
+//now we come onto database connection 
+//backend is your programming logic and frontend is your user interface
+//we store data in database and then we use that data in our application
+
+//create a folder utils and in it a file db.js
